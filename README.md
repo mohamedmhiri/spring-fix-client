@@ -4,7 +4,9 @@
 1. java(1.9) and gradle(4.3)
 2. java ide or text editor with a terminal / command prompt
 3. follow these guides:
+
     [Building Java Projects with Gradle](https://spring.io/guides/gs/gradle/)
+    
     [Building a RESTful Web Service](https://spring.io/guides/gs/rest-service/)
 
 Now you are ready inchea Allah to build our fix project and run it:
