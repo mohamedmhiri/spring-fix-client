@@ -19,13 +19,15 @@ jar {
 
 repositories {
     mavenCentral()
+    maven { url "https://repo.spring.io/libs-release" }
 }
 
-sourceCompatibility = 1.9
-targetCompatibility = 1.9
+sourceCompatibility = 1.8
+targetCompatibility = 1.8
 
 dependencies {
     compile("org.springframework.boot:spring-boot-starter-web")
+    compile group: 'io.allune', name: 'quickfixj-spring-boot-starter-examples', version: '1.0.1', ext: 'pom'
     testCompile('org.springframework.boot:spring-boot-starter-test')
 }
 
