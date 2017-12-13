@@ -2,7 +2,15 @@ package finance;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import quickfix.*;
+import quickfix.Message;
+import quickfix.SessionID;
+import quickfix.Application;
+import quickfix.FieldNotFound;
+import quickfix.IncorrectDataFormat;
+import quickfix.IncorrectTagValue;
+import quickfix.RejectLogon;
+import quickfix.UnsupportedMessageType;
+import quickfix.DoNotSend;
 
 public class ClientApplicationAdapter implements Application {
 

@@ -27,8 +27,9 @@ targetCompatibility = 1.8
 
 dependencies {
     compile("org.springframework.boot:spring-boot-starter-web")
-    compile group: 'io.allune', name: 'quickfixj-spring-boot-starter-examples', version: '1.0.1', ext: 'pom'
-    compile group: 'quickfixj', name: 'quickfixj-all', version: '1.5.3'
+    compile group: 'io.allune', name: 'quickfixj-spring-boot-starter', version: '1.0.1'
+
+    compile group: 'org.quickfixj', name: 'quickfixj-all', version: '1.6.4'
     testCompile('org.springframework.boot:spring-boot-starter-test')
 }
 
