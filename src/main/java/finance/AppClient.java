@@ -8,13 +8,8 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.Bean;
 //import quickfix.MessageStoreFactory;
-import quickfix.*;/*
-import quickfix.
-import quickfix.
-import quickfix.
-import quickfix.
-import quickfix.
-import quickfix.*/
+import quickfix.*;
+
 
 @EnableQuickFixJClient
 @SpringBootApplication
@@ -38,7 +33,7 @@ public class AppClient implements CommandLineRunner{
     }
 
     @Bean
-    public Acceptor clientAcceptor(quickfix.Application clientApplication, MessageStoreFactory clientMessageStoreFactory,
+    public Acceptor clientAcceptor(Application clientApplication, MessageStoreFactory clientMessageStoreFactory,
                                    SessionSettings clientSessionSettings, LogFactory clientLogFactory,
                                    MessageFactory clientMessageFactory) throws ConfigError {
 

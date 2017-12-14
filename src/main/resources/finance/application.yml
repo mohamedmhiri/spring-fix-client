@@ -1,0 +1,17 @@
+quickfixj:
+  client:
+    config: quickfixj-client.cfg
+    jmx-enabled: true
+
+server:
+  port: 8080
+
+management:
+  security:
+    enabled: false
+
+endpoints:
+  quickfixjclient:
+    id: qfjclient
+    enabled: true
+    sensitive: false
