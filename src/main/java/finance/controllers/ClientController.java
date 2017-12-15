@@ -23,22 +23,22 @@ public class ClientController {
     }
 
 
-    @RequestMapping(value="/new-order", method = RequestMethod.POST, consumes = "application/json")
-    public Map<String, String> newOrder(@RequestBody Transaction t) throws InterruptedException, ConfigError, SessionNotFound {
-        Map<String,String> result = new HashMap<>();
-        result.put("req", t.getReq());
-        result.put("dir",t.getDir());
-        result.put("type",t.getType());
-
-        System.out.println("Executing requested transaction : ");
-
-        finance.FIX.SenderApp.execute(t.getReq(),t.getDir(),t.getType(),t.getQty(),t.getPrice());
-
-
-
-
-        return result;
-
-    }
+//    @RequestMapping(value="/new-order", method = RequestMethod.POST, consumes = "application/json")
+//    public Map<String, String> newOrder(@RequestBody Transaction t) throws InterruptedException, ConfigError, SessionNotFound {
+//        Map<String,String> result = new HashMap<>();
+//        result.put("req", t.getReq());
+//        result.put("dir",t.getDir());
+//        result.put("type",t.getType());
+//
+//        System.out.println("Executing requested transaction : ");
+//
+//        finance.FIX.SenderApp.execute(t.getReq(),t.getDir(),t.getType(),t.getQty(),t.getPrice());
+//
+//
+//
+//
+//        return result;
+//
+//    }
 }
 
