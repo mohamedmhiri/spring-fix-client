@@ -1,4 +1,4 @@
-package finance;
+package finance.models;
 
 public class Greeting {
 

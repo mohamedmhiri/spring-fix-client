@@ -1,56 +1,45 @@
-package finance;
-
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
-//import quickfix.Message;
-//import quickfix.SessionID;
-//import quickfix.Application;
-//import quickfix.FieldNotFound;
-//import quickfix.IncorrectDataFormat;
-//import quickfix.IncorrectTagValue;
-//import quickfix.RejectLogon;
-//import quickfix.UnsupportedMessageType;
-//import quickfix.DoNotSend;
-import quickfix.*;
-
-public class ClientApplicationAdapter implements Application {
-
-    private static final Logger log = LoggerFactory.getLogger(ClientApplicationAdapter.class);
-
-    @Override
-    public void fromAdmin(Message message, SessionID sessionId)
-            throws FieldNotFound, IncorrectDataFormat, IncorrectTagValue, RejectLogon {
-        log.info("fromAdmin: Message={}, SessionId={}", message, sessionId);
-    }
-
-    @Override
-    public void fromApp(Message message, SessionID sessionId)
-            throws FieldNotFound, IncorrectDataFormat, IncorrectTagValue, UnsupportedMessageType {
-        log.info("fromApp: Message={}, SessionId={}", message, sessionId);
-    }
-
-    @Override
-    public void onCreate(SessionID sessionId) {
-        log.info("onCreate: SessionId={}", sessionId);
-    }
-
-    @Override
-    public void onLogon(SessionID sessionId) {
-        log.info("onLogon: SessionId={}", sessionId);
-    }
-
-    @Override
-    public void onLogout(SessionID sessionId) {
-        log.info("onLogout: SessionId={}", sessionId);
-    }
-
-    @Override
-    public void toAdmin(Message message, SessionID sessionId) {
-        log.info("toAdmin: Message={}, SessionId={}", message, sessionId);
-    }
-
-    @Override
-    public void toApp(Message message, SessionID sessionId) throws DoNotSend {
-        log.info("toApp: Message={}, SessionId={}", message, sessionId);
-    }
-}
+//package finance;
+//
+//import org.slf4j.Logger;
+//import org.slf4j.LoggerFactory;
+////import quickfix.Message;
+////import quickfix.SessionID;
+////import quickfix.Application;
+////import quickfix.FieldNotFound;
+////import quickfix.IncorrectDataFormat;
+////import quickfix.IncorrectTagValue;
+////import quickfix.RejectLogon;
+////import quickfix.UnsupportedMessageType;
+////import quickfix.DoNotSend;
+//import quickfix.*;
+//
+//public class ClientApplicationAdapter implements quickfix.Application {
+//
+//    private static final Logger log = LoggerFactory.getLogger(ClientApplicationAdapter.class);
+//
+//    @Override
+//    public void fromAdmin(Message arg0, SessionID arg1) throws FieldNotFound, IncorrectDataFormat,
+//            IncorrectTagValue, RejectLogon {
+//    }
+//
+//    @Override
+//    public void fromApp(Message arg0, SessionID arg1) throws FieldNotFound, IncorrectDataFormat,
+//            IncorrectTagValue, UnsupportedMessageType { }
+//
+//    @Override
+//    public void onCreate(SessionID arg0) {}
+//
+//    @Override
+//    public void onLogon(SessionID arg0) {}
+//
+//    @Override
+//    public void onLogout(SessionID arg0) {}
+//
+//    @Override
+//    public void toAdmin(Message arg0, SessionID arg1) {}
+//
+//    @Override
+//    public void toApp(Message msg, SessionID sessionId) throws DoNotSend {
+//        System.out.println("Sender toApp: " + msg.toString());
+//    }
+//}

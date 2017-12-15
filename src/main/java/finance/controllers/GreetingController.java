@@ -1,6 +1,8 @@
-package finance;
+package finance.controllers;
 
 import java.util.concurrent.atomic.AtomicLong;
+
+import finance.models.Greeting;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;

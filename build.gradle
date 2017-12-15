@@ -35,4 +35,4 @@ dependencies {
 
 apply plugin: 'application'
 
-mainClassName = 'finance.AppClient'
+mainClassName = 'finance.App'

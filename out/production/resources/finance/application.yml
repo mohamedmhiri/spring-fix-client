@@ -2,6 +2,10 @@ quickfixj:
   client:
     config: quickfixj-client.cfg
     jmx-enabled: true
+  server:
+      config: quickfixj-server.cfg
+      jmx-enabled: true
+
 
 server:
   port: 8080
